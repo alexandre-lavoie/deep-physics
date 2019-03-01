@@ -3,3 +3,7 @@ Deep-Physics is a TensorFlow model trained to replicate physic engines. Using Te
 
 # Research Paper
 A work in progress research paper can be found here: [https://www.overleaf.com/read/jmwjtzdhqrvz](https://www.overleaf.com/read/jmwjtzdhqrvz).
+
+# Created By
+
+Alexandre Lavoie and James Kary from Vanier College, QC, Canada.
