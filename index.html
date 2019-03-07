@@ -1,19 +1,59 @@
 <html>
 
+<style>
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: black;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.load{
+	text-align: center;
+	width: 300px;
+	border-radius: 25px;
+	background-color: white;
+}
+
+input{
+	display: block;
+	margin : 0 auto;
+}
+
+button{
+	display: block;
+	margin : 0 auto;
+}
+</style>
+
 <head>
 
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.15.3/dist/tf.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
-<script src="./js/Projectile.js"></script> 
+<script src="https://unpkg.com/ccapture.js@1.1.0/build/CCapture.all.min.js"></script>
+<script src="./js/Deep-Physics.js"></script> 
 
 </head>
 
 <body>
 
-<input type="file" id="upload-json"/>
-<input type="file" id="upload-weights"/>
-<button onclick="getModel(document.getElementById('upload-json'),document.getElementById('upload-weights'));">Submit</button>
+<div id="load" class="load">
+<h3>Environment</h3>
+<input type="textbox" id="enviroment-name"/>
 </br>
+<h3>Model File</h3>
+<input type="file" id="upload-json"/>
+</br>
+<h3>Weight File</h3>
+<input type="file" id="upload-weights"/>
+</br>
+<button onclick="startDeepPhysics()">Load</button>
+</br>
+</div>
 
 </body>
 
