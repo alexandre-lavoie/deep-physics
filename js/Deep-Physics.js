@@ -4,7 +4,7 @@ function startDeepPhysics(){
 	document.head.appendChild(js);
 	
 	var js = document.createElement("script");
-	js.src = "./environment/" + document.getElementById('enviroment-name').value + ".js";
+	js.src = "./environments/" + document.getElementById('enviroment-name').value + ".js";
 	document.head.appendChild(js);	
 	
 	var json = document.getElementById('upload-json').files[0];
