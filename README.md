@@ -37,4 +37,4 @@ Acceleration system with random initial conditions. Example uses Model 2.
 
 # Credits and Acknowledgment
 
-Research project made by Alexandre Lavoie and James Kary from Vanier College, QC, Canada. We want to thank Prof. Ivan Ivanov for his guidance in the field.
+Research project made by Alexandre Lavoie and James Kary from Vanier College, QC, Canada. We want to thank Prof. Ivan Ivanov for his guidance.
