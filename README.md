@@ -31,9 +31,10 @@ Acceleration system with random initial conditions. Example uses Model 2.
 ![alt text](https://github.com/alexandre-lavoie/deep-physics/blob/master/images/Projectile.gif?raw=true)
 
 # TODO
-* Create a sun, planet, and satellite environment.
+* Astro.js - A sun, planet, and satellite environment.
 * Consider more factors (attraction, friction, rotation, shape) for the model.
 * Consider collisions with other objects by adding another object in the input layer.
+* Mario.js - A platformer game.
 
 # Credits and Acknowledgment
 
