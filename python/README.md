@@ -7,6 +7,9 @@ DNN is a typical keras Deep Neural Network trained on Newtonian physics.
 ### GAN
 GAN is a keras GAN trained on Newtonian physics.
 
+### RNN
+RNN is a keras RNN trained on Newtonian physics. Generates full paths over set time.
+
 # Note
 Generated h5 neural networks can be converted using the following tensorflowjs bash command
 
