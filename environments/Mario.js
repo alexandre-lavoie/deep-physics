@@ -178,18 +178,15 @@ class Block {
 }
 
 // For recording.
-function keyPressed() {
-	switch (key) {
-	case 'q'.charCodeAt(0):
+function keyPressed(){
+	if(key === "q"){
 		console.log("Start capture");
 		capturer.start();
 		recording = true;
-		break;
-	case 'e'.charCodeAt(0):
+	}else if(key === "e"){
 		console.log("Stop capture");
 		capturer.stop();
 		capturer.save();
 		recording = false;
-		break;
 	}
 }
