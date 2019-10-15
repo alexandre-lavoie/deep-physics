@@ -14,4 +14,4 @@ We have included our [unpublished research paper](Deep_Physics.pdf) which explai
 Research project made by Alexandre Lavoie and James Kary from Vanier College, QC, Canada. We want to thank Dr. Ivan Ivanov for his guidance.
 
 # License
-[MIT License](LICENSE.md)
+[MIT License](LICENSE)
