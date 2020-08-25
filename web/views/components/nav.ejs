@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FFE500;">
+    <div class="mx-auto"></div>
+    <ul class="navbar-nav">
+        <li class="nav-item <%= (page === 'Home') ? 'active' : '' %>">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item <%= (page === 'Gallery') ? 'active' : '' %>">
+            <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item <%= (page === 'Research') ? 'active' : '' %>">
+            <a class="nav-link" href="/research">Research</a>
+        </li>
+        <li class="nav-item <%= (page === 'About') ? 'active' : '' %>">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+    </ul>
+</nav>

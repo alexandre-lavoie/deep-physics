@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <%- include('../components/head') %>
+    <style>
+        .deepPhysicsContainer {
+            display: grid;
+            justify-items: center;
+            background-color: #FFE500;
+            margin-bottom: 3em;
+        }
+        h2 {
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        h2:after {
+            content: '';
+            width: 55px;
+            display: block;
+            border-bottom: 3px solid #FFE500;
+            padding: 11px 0 0;
+            margin-bottom: 14px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('../components/nav') %>
+    <div class="deepPhysicsContainer">
+        <img src="/images/logo.png" style="width: 512px;" />
+    </div>
+    <h2>What is Deep Physics?</h2>
+    <div style="display: grid; justify-content: center;">
+        <img src="/images/model.png" style="width: 548px;" />
+    </div>
+    <p>Deep Physics is a compact <a href="">DNN</a> model trained to simulate physics. It uses a snapshot in time to predict the next state(s) of a physical system.</p>
+    <br/><br/>
+    <h2>Why Deep Phyiscs?</h2>
+    <div style="display: grid; justify-content: center;">
+        <img src="/images/intuitive_physics.png" style="width: 548px" />
+    </div>
+    <p>Deep Physics is not trying to compete with state of the art physics engines. This research explores the concept of <a href="">Intuitive Physics</a>, a possible subset of General AI.</p>
+    <br/><br/>
+    <h2>Interested?</h2>
+    <div style="display: grid; justify-content: center;">
+        <img src="/images/play_read_dev.png" style="width: 548px;" />
+    </div>
+    <p>You can test the environments in the <a href="/gallery">gallery</a>, read the <a href="https://github.com/alexandre-lavoie/deep-physics/blob/master/Deep_Physics.pdf">research paper</a>, or <a href="https://github.com/alexandre-lavoie/deep-physics">develop using Deep Physics</a>.</p>
+    <br/><br/>
+    <%- include('../components/footer') %>
+</body>
+
+</html>
