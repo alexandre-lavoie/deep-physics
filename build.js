@@ -27,7 +27,7 @@ console.log("Deep Physics Builder\n");
     console.log("> Copying environments.");
 
     if(!fs.existsSync(path.resolve(__dirname, 'environments/build'))) {
-        console.error((await exec(`${path.resolve(__dirname, 'environments')}`)).stdout);
+        console.error((await exec(`ls ${path.resolve(__dirname, 'environments')}`)).stdout);
     } else {
         fs.copySync(path.resolve(__dirname, 'environments/build'), path.resolve(__dirname, 'build/public/environments'));
     }
