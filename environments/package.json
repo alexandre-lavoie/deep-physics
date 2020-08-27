@@ -1,0 +1,16 @@
+{
+  "name": "deep-physics-environments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node install.js",
+    "build": "node build.js"
+  },
+  "author": "Alexandre Lavoie",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-extra": "^9.0.1",
+    "cli-progress": "^3.8.2"
+  }
+}

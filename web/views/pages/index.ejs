@@ -32,7 +32,12 @@
 <body>
     <%- include('../components/nav') %>
     <div class="deepPhysicsContainer">
-        <img src="/images/logo.png" style="width: 512px;" />
+        <img src="/images/logo.png" style="grid-column: auto; width: 512px;" />
+        <div style="grid-column: d; align-self: center; display: grid">
+            <iframe style="border: none; border-radius: 1em; width: 306px; height: 306px; align-self: center" src="/env/gravity"></iframe>
+            <br />
+            <span style="text-align: center;">Your cursor is gravity!</span>
+        </div>
     </div>
     <h2>What is Deep Physics?</h2>
     <div style="display: grid; justify-content: center;">
@@ -50,7 +55,7 @@
     <div style="display: grid; justify-content: center;">
         <img src="/images/play_read_dev.png" style="width: 548px;" />
     </div>
-    <p>You can test the environments in the <a href="/gallery">gallery</a>, read the <a href="https://github.com/alexandre-lavoie/deep-physics/blob/master/Deep_Physics.pdf">research paper</a>, or <a href="https://github.com/alexandre-lavoie/deep-physics">develop using Deep Physics</a>.</p>
+    <p>You can test the environments in the <a href="/gallery">gallery</a>, view the <a href="https://github.com/alexandre-lavoie/deep-physics/blob/master/Deep_Physics.pdf">research</a>, or <a href="https://github.com/alexandre-lavoie/deep-physics">develop using Deep Physics</a>.</p>
     <br/><br/>
     <%- include('../components/footer') %>
 </body>

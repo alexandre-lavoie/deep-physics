@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <%- include('../components/head') %>
+    <style>
+        .headerContainer {
+            display: grid;
+            justify-items: center;
+            background-color: #FFE500;
+            margin-bottom: 3em;
+            padding-bottom: 2em;
+        }
+        h2 {
+            font-weight: 600;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        h1 {
+            font-weight: 700;
+        }
+        h2:after {
+            content: '';
+            width: 55px;
+            display: block;
+            border-bottom: 3px solid #FFE500;
+            padding: 11px 0 0;
+            margin-bottom: 14px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('../components/nav') %>
+    <div class="headerContainer">
+        <h1>Gallery</h1>
+    </div>
+
+    <h2>Platformer</h2>
+    <div style="display: grid; justify-content: center;">
+        <div style="display: grid; justify-content: center;">
+            <iframe style="border: none; border-radius: 1em; width: 306px; height: 306px; align-self: center" src="/env/platformer"></iframe>
+        </div>
+        <br />
+        <p>A video game like scenario. Move player using arrow keys.</p>
+    </div>
+    <br />
+    <h2>Gravity</h2>
+    <div style="display: grid; justify-content: center;">
+        <div style="display: grid; justify-content: center;">
+            <iframe style="border: none; border-radius: 1em; width: 306px; height: 306px; align-self: center" src="/env/gravity"></iframe>
+        </div>
+        <br />
+        <p>2D gravity simulation. Particles are accelerated towards cursor.</p>
+    </div>
+    <br />
+    <br />
+    <%- include('../components/footer') %>
+</body>
+
+</html>

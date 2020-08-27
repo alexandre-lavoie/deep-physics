@@ -1,0 +1,23 @@
+{
+  "name": "deep-physics-gravity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Alexandre Lavoie",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "^2.3.0",
+    "p5": "^1.1.9"
+  },
+  "devDependencies": {
+    "@types/p5": "^0.9.1",
+    "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

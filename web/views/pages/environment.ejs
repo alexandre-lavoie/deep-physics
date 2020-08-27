@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/2.3.0/tf.min.js"></script>
+        <script>const MODEL = "<%= model %>";</script>
+    </head>
+    <body>
+        <div id="<%= envName %>-container"></div>
+        <script src="<%= envUrl %>"></script>
+    </body>
+</html>
