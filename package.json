@@ -7,7 +7,6 @@
     "start": "node ./build/index.js",
     "stage": "ts-node web/index.ts",
     "dev": "nodemon -x ts-node web/index.ts",
-    "postinstall": "cd environments && npm install",
     "build": "node build.js"
   },
   "repository": {
