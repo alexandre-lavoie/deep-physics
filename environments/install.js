@@ -14,6 +14,8 @@ console.log("Deep Physics Env Installer\n");
     .map(d => d.name)
     .filter(d => d !== 'node_modules' && d !== 'build');
 
+    console.log(directories);
+
     let total = directories.length;
     let current = 0;
 

@@ -22,7 +22,7 @@ console.log("Deep Physics Builder\n");
 
     console.log("> Building environments.");
 
-    await exec(`cd "${path.resolve(__dirname, 'environments')}" && npm run build`);
+    console.log((await exec(`cd "${path.resolve(__dirname, 'environments')}" && npm run build`)).stdout);
 
     console.log("> Copying environments.");
 
