@@ -22,19 +22,11 @@ console.log("Deep Physics Builder\n");
 
     console.log("> Building environments.");
 
-    let buildOutput = await exec(`cd "${path.resolve(__dirname, 'environments')}" && npm run build`);
-
-    console.log(buildOutput.stdout);
-
-    console.log(buildOutput.stderr);
+    await exec(`npm run build`, { cwd: path.resolve(__dirname, 'environments')});
 
     console.log("> Copying environments.");
 
-    if(!fs.existsSync(path.resolve(__dirname, 'environments/build'))) {
-        console.error((await exec(`ls ${path.resolve(__dirname, 'environments')}`)).stdout);
-    } else {
-        fs.copySync(path.resolve(__dirname, 'environments/build'), path.resolve(__dirname, 'build/public/environments'));
-    }
+    fs.copySync(path.resolve(__dirname, 'environments/build'), path.resolve(__dirname, 'build/public/environments'));
 
     console.log("\nDONE!");
 })();

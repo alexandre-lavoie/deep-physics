@@ -7,7 +7,7 @@
         "preserveConstEnums": true,
         "allowJs": true,
         "sourceMap": true,
-        "outDir": "dist",
+        "outDir": "build",
         "target": "es5",
         "esModuleInterop": true,
         "skipLibCheck": true
