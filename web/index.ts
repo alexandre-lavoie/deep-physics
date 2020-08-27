@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/env/:env', (req, res) => {
-    res.render('pages/environment.ejs', { envName: req.params.env, envUrl: `${req.protocol}://${req.headers.host}/environments/${req.params.env}/bundle.js`, model: `${req.protocol}://${req.headers.host}/models/model2/model.json` });
+    res.render('pages/environment.ejs', { envName: req.params.env, model: `/models/model2/model.json` });
 });
 
 app.get('/gallery', (req, res) => {
