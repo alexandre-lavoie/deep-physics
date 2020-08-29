@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <%- include('../components/head') %>
+    <style>
+        .avatar {
+            border-radius: 100em;
+            width: 150px;
+            height: 150px;
+            vertical-align: top;
+            object-fit: contain;
+        }
+
+        .peopleContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            grid-gap: 2em;
+        }
+
+        .personContainer {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .peopleContainer {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('../components/nav') %>
+    <div class="headerContainer">
+        <h1>About</h1>
+    </div>
+
+    <h2>Team</h2>
+    <br />
+    <div class="peopleContainer">
+        <div class="personContainer">
+            <img class="avatar" src="/images/ivan.png" />
+            <br />
+            <h3 style="margin-bottom: 0px;">Ivan Ivanov, PhD</h3>
+            <i>Vanier College</i>
+            <br />
+            <p>Project Supervisor</p>
+        </div>
+
+        <div class="personContainer">
+            <img class="avatar" src="/images/james.jpg" />
+            <br />
+            <h3 style="margin-bottom: 0px;">James Kary</h3>
+            <i>Vanier College</i>
+            <br />
+            <p>Research Lead</p>
+        </div>
+
+        <div class="personContainer">
+            <img class="avatar" src="/images/alex.jpg" />
+            <br />
+            <h3 style="margin-bottom: 0px;">Alexandre Lavoie</h3>
+            <i>Vanier College</i>
+            <br />
+            <p>Development Lead</p>
+        </div>
+    </div>
+
+    <br />
+
+    <h2>Background</h2>
+
+    <div style="display: grid; justify-content: center;">
+        <img style="width: 456px;" src="/images/vanier.jpg" />
+    </div>
+
+    <p style="margin: 3em; text-align: justify;">Dr. Ivanov is a professor in the department of mathematics at Vanier College. He has previous research in physics, mathematics, and computer science. James is a science student at Vanier College. He has a keen eye in research and an in-depth understanding of science. Alex is a honor science student at Vanier College. He has special interest in computer science.</p>
+
+    <%- include('../components/footer') %>
+</body>
+
+</html>

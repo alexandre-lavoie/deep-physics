@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <%- include('../components/head') %>
+    <style>
+        p {
+            margin: 0em 3em;
+            text-align: justify;
+        }
+
+        .figuresContainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            grid-gap: 1em;
+        }
+
+        .figureContainer {
+            display: grid;
+            justify-self: center;
+        }
+
+        .figure {
+            width: 600px;
+        }
+
+        @media(max-width: 600px) {
+            .figuresContainer {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('../components/nav') %>
+    <div class="headerContainer">
+        <h1>Research</h1>
+    </div>
+
+    <h2>Overview</h2>
+    <p>This research was conducted under the Épreuve synthèse de programme (ESP) requirements for cegep students in
+        Quebec. Additional research was performed through extracurricular means to deepen the complexity and accuracy of
+        the Machine Learning. The project was completed over the duration of one semester. The team presented during the
+        Vanier College Science Fair and at the McGill University <a href="http://www.physics.mcgill.ca/ai2019/">Phyiscs
+            and AI Workshop</a>. More about this research can be found on <a
+            href="https://github.com/alexandre-lavoie/deep-physics">GitHub</a> or in the <a
+            href="/Deep_Physics.pdf">research paper</a>.
+    </p>
+
+    <br />
+    <br />
+
+    <h2>Abstract</h2>
+    <p>Despite revolutionary advancements in Artificial Intelligence, General AI remains a stagnant field of research.
+        Even if Neural Networks have mastered a multitude of individual tasks, current models remain weak solutions of
+        mimicking actual human learning. This research attempts to break away from Narrow AI by focusing on recreating
+        the innate human perception and understanding of the world. More specifically, this research explores the
+        concept of intuitive physics by proposing Deep-Physics. Using numerical data from physics models, Deep-Physics
+        is trained to replicate human's intuitive understanding of physics. Given initial conditions of objects,
+        Deep-Physics generates a realistic step-by-step approximation of dynamics of environments. The simplicity of the
+        model allows Deep-Physics to be a potential alternative to real-time physics engines. Using a Deep-Physics model
+        could be a step into a more efficient and intuitive Machine Learning, eventually leading to the ultimate goal of
+        General AI.</p>
+
+    <br />
+    <br />
+
+    <h2>Results</h2>
+    <div class="figuresContainer">
+        <div class="figureContainer">
+            <img class="figure" src="/images/dnn.png" />
+            <center><i>Results for DNN</i></center>
+        </div>
+        <div class="figureContainer">
+            <img class="figure" src="/images/rnn.png" />
+            <center><i>Results for RNN</i></center>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <%- include('../components/footer') %>
+</body>
+
+</html>

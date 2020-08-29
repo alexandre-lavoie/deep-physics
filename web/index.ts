@@ -17,15 +17,15 @@ app.get('/env/:env', (req, res) => {
 });
 
 app.get('/gallery', (req, res) => {
-    res.render('pages/gallery', { page: 'Gallery' });
+    res.render('pages/gallery.ejs', { page: 'Gallery' });
 });
 
 app.get('/research', (req, res) => {
-    res.render('pages/todo.ejs', { page: 'Research' });
+    res.render('pages/research.ejs', { page: 'Research' });
 });
 
 app.get('/about', (req, res) => {
-    res.render('pages/todo.ejs', { page: 'About' });
+    res.render('pages/about.ejs', { page: 'About' });
 });
 
 app.listen(PORT, () => console.log(`Deep Physics running on port ${PORT}.`));
